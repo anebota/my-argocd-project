@@ -6,7 +6,7 @@ metadata:
   name: my-argocd-app-service
 spec:
   selector:
-    app: my-argocd-app
+    app: cloud14-app
   ports:
     - protocol: TCP
       port: 80
