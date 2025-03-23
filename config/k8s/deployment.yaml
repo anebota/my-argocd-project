@@ -3,21 +3,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-argocd-app
+  name: cloud14-app
   labels:
-    app: my-argocd-app
+    app: cloud14-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-argocd-app
+      app: cloud14-app
   template:
     metadata:
       labels:
-        app: my-argocd-app
+        app: cloud14-app
     spec:
       containers:
-        - name: my-argocd-app
-          image: 642588679360.dkr.ecr.us-west-2.amazonaws.com/flo-ecr-repo:latest  # Placeholder for the Docker image URI
+        - name: cloud14-app
+          image: 474668424273.dkr.ecr.ap-southeast-1.amazonaws.com/cloud14  # Placeholder for the Docker image URI
           ports:
             - containerPort: 3000
