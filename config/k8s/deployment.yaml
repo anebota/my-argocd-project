@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
         - name: cloud14-app
-          image: 474668424273.dkr.ecr.ap-southeast-1.amazonaws.com/cloud14  # Placeholder for the Docker image URI
+          image: 474668424273.dkr.ecr.ap-southeast-1.amazonaws.com/cloud14:latest  # Placeholder for the Docker image URI
           ports:
             - containerPort: 3000
