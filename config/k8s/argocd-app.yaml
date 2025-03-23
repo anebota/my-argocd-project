@@ -2,12 +2,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-argocd-app
+  name: cloud14-app
   namespace: argocd              # Namespace where ArgoCD is installed
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/florayuyuun123/my-argocd-app.git'  # GitHub repository URL
+    repoURL: 'https://github.com/anebota/my-argocd-project.git'  # GitHub repository URL
     path: config/k8s            # Path to Kubernetes manifests in the repository
     targetRevision: main        # Git branch to track
   destination:
